@@ -1,0 +1,6 @@
+{
+  "require": {
+    "php": ">=7.0",
+    "checkout/checkout-sdk-php": "^2.4"
+  }
+}
