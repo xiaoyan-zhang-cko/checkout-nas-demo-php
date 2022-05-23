@@ -2,7 +2,7 @@ var payButton = document.getElementById("pay-button");
 var form = document.getElementById("payment-form");
 
 Frames.init({
-  publicKey: "pk_sbox_mslqe6gvzaqukcpitvmf6tv54qf",
+  publicKey: "pk_sbox_XXXXXXXXXXXXXXXXXXXXX",
   frameSelector: ".card-frame",
   localization: "FR-FR",
   debug: false
@@ -79,7 +79,6 @@ function postPayment(framesToken) {
   $.post("server/payment.php",
       {
         cko_card_token: framesToken,
-        price: 25000,
       }, function (data) {
         $('.paymentwrapper').html(
             `<pre>` + data + `</pre>`)

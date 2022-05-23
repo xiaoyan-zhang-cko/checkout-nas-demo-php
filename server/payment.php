@@ -21,8 +21,8 @@ use Checkout\Payments\Four\Sender\PaymentIndividualSender;
 
 // API Keys
 $builder = CheckoutFourSdk::staticKeys();
-$builder->setPublicKey("pk_sbox_mslqe6gvzaqukcpitvmf6tv54qf");
-$builder->setSecretKey("sk_sbox_t44v3jzcgxygqs7oq26spq6v3ao");
+$builder->setPublicKey("pk_sbox_XXXXXXXXXXXXXXXXX");
+$builder->setSecretKey("sk_sbox_XXXXXXXXXXXXXXXXX");
 $builder->setEnvironment(Environment::sandbox()); // or Environment::production()
 $api = $builder->build();
 
